@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Takeshi Kitano — Tokyo University graduate. Leader and developer across websites, e-commerce, mobile, CRM, automation, blockchain, and more. Currently honing Golang."
+    />
+    <title>Takeshi Kitano — Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231a8fff'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2304101f'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap"
+    />
+    <link rel="preload" as="image" href="/images/takeshi.webp" type="image/webp" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="bg-atmosphere" aria-hidden="true"></div>
+
+    <header class="site-nav">
+      <div class="container">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Takeshi Kitano
+        </a>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#portfolio">📁 Portfolio</a></li>
+            <li><a href="#intro">👋 Introduction</a></li>
+            <li><a href="#stack">🪜 Tech Stack</a></li>
+            <li><a href="#solutions">💡 Solutions</a></li>
+            <li><a href="#contact">✉️ Contact</a></li>
+          </ul>
+        </nav>
+        <a class="nav-cta" href="#portfolio">✨ View work</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">🎓 Tokyo University · 💳 Coiney · 🌏 Japan freelance</p>
+            <p class="hero-brand">Takeshi<br />Kitano</p>
+            <h1 class="hero-title">Websites, products, and systems — built for the problem in front of me.</h1>
+            <p class="hero-lead">
+              Leader &amp; developer with <strong>3 years at Coiney</strong> and
+              <strong>5 years of freelance experience</strong>. My scope covers website development,
+              e-commerce, mobile, CRM, automation, blockchain, and more. I keep learning by taking on
+              new challenges — currently honing <strong>Golang</strong>.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#portfolio">🚀 Explore portfolio</a>
+              <a class="btn btn-ghost" href="#contact">💬 Get in touch</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="wheel-wrap" aria-label="Navigation wheel: Portfolio, My Introduction, Solutions, My Journey">
+              <div class="wheel-dots" hidden aria-hidden="true"></div>
+              <svg class="wheel" viewBox="-40 -40 480 480" role="img" aria-labelledby="wheel-title">
+                <title id="wheel-title">Takeshi Intelligence wheel</title>
+                <defs>
+                  <linearGradient id="segBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1a8fff" />
+                    <stop offset="55%" stop-color="#0d6fd4" />
+                    <stop offset="100%" stop-color="#063a7a" />
+                  </linearGradient>
+                  <linearGradient id="segCyan" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0a4f9c" />
+                    <stop offset="100%" stop-color="#3db4ff" />
+                  </linearGradient>
+                  <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4ee3ff" />
+                    <stop offset="100%" stop-color="#1a8fff" />
+                  </linearGradient>
+                  <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="4" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <radialGradient id="earthLimb" cx="34%" cy="28%" r="72%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34" />
+                    <stop offset="48%" stop-color="#9fd4ff" stop-opacity="0.04" />
+                    <stop offset="100%" stop-color="#02101c" stop-opacity="0.42" />
+                  </radialGradient>
+                  <clipPath id="faceClip">
+                    <circle cx="200" cy="200" r="54" />
+                  </clipPath>
+                </defs>
+
+                <linearGradient id="segDeep" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#1565c0" />
+                  <stop offset="100%" stop-color="#0a3d78" />
+                </linearGradient>
+                <path id="path-intro" d="M 134.3 94.8 A 124 124 0 0 1 265.7 94.8" fill="none" />
+                <path id="path-portfolio" d="M 305.2 134.3 A 124 124 0 0 1 305.2 265.7" fill="none" />
+                <path id="path-solutions" d="M 134.3 305.2 A 124 124 0 0 0 265.7 305.2" fill="none" />
+                <path id="path-journey" d="M 94.8 134.3 A 124 124 0 0 0 94.8 265.7" fill="none" />
+
+                <!-- Atmosphere -->
+                <circle cx="200" cy="200" r="168" fill="none" stroke="rgba(110,196,255,0.22)" stroke-width="14" />
+                <circle cx="200" cy="200" r="158" fill="none" stroke="rgba(186,230,255,0.45)" stroke-width="2" />
+
+                <!-- Soft track -->
+                <circle cx="200" cy="200" r="124" fill="none" stroke="rgba(126,200,255,0.1)" stroke-width="54" />
+
+                <!-- My Journey (left) -->
+                <g class="wheel-seg" data-target="stack" tabindex="0" role="link" aria-label="Go to My Journey">
+                  <path
+                    d="M 93.9 306.1 A 150 150 0 0 1 93.9 93.9 L 130.7 130.7 A 98 98 0 0 0 130.7 269.3 Z"
+                    fill="url(#segDeep)"
+                  />
+                </g>
+
+                <!-- Solutions (bottom) -->
+                <g class="wheel-seg" data-target="solutions" tabindex="0" role="link" aria-label="Go to Solutions">
+                  <path
+                    d="M 306.1 306.1 A 150 150 0 0 1 93.9 306.1 L 130.7 269.3 A 98 98 0 0 0 269.3 269.3 Z"
+                    fill="url(#segCyan)"
+                  />
+                </g>
+
+                <!-- My Introduction (top) -->
+                <g class="wheel-seg" data-target="intro" tabindex="0" role="link" aria-label="Go to My Introduction">
+                  <path
+                    d="M 93.9 93.9 A 150 150 0 0 1 306.1 93.9 L 269.3 130.7 A 98 98 0 0 0 130.7 130.7 Z"
+                    fill="url(#segBlue)"
+                  />
+                </g>
+
+                <!-- Portfolio (right) — same radius as the other regions -->
+                <g class="wheel-seg is-active" data-target="portfolio" tabindex="0" role="link" aria-label="Go to Portfolio">
+                  <path
+                    d="M 306.1 93.9 A 150 150 0 0 1 306.1 306.1 L 269.3 269.3 A 98 98 0 0 0 269.3 130.7 Z"
+                    fill="#f7fbff"
+                  />
+                </g>
+
+                <circle cx="200" cy="200" r="150" fill="url(#earthLimb)" pointer-events="none" />
+
+                <text class="wheel-label">
+                  <textPath href="#path-journey" startOffset="50%" text-anchor="middle">My Journey</textPath>
+                </text>
+                <text class="wheel-label">
+                  <textPath href="#path-solutions" startOffset="50%" text-anchor="middle">Solutions</textPath>
+                </text>
+                <text class="wheel-label">
+                  <textPath href="#path-intro" startOffset="50%" text-anchor="middle">My Introduction</textPath>
+                </text>
+                <text class="wheel-label highlight">
+                  <textPath href="#path-portfolio" startOffset="50%" text-anchor="middle">Portfolio</textPath>
+                </text>
+
+                <!-- Core: portrait -->
+                <circle cx="200" cy="200" r="58" fill="#071a2f" />
+                <image
+                  href="/images/takeshi.webp"
+                  x="96"
+                  y="118"
+                  width="208"
+                  height="215"
+                  clip-path="url(#faceClip)"
+                  preserveAspectRatio="none"
+                />
+                <circle cx="200" cy="200" r="54" fill="none" stroke="rgba(186,230,255,0.85)" stroke-width="2" />
+              </svg>
+            </div>
+            <p class="wheel-caption">
+              <span class="spark" aria-hidden="true"></span>
+              Takeshi Intelligence
+              <span class="spark" aria-hidden="true"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-open" id="intro">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">👋 My Introduction</p>
+            <h2 class="section-title">Engineer trained in Tokyo.<br />Scope that keeps expanding.</h2>
+            <p class="section-lead">
+              Website development, e-commerce, mobile, CRM, automation, blockchain, and whatever the next challenge requires.
+              I learn by shipping — and right now that means Golang.
+            </p>
+          </div>
+
+          <div class="intro-layout reveal">
+            <div class="intro-story">
+              <p class="intro-lead-copy">
+                I’m <strong>Takeshi Kitano</strong> — a Tokyo University graduate, former Coiney engineer, and freelance
+                <em>leader &amp; developer</em> with five years of client delivery across Japan.
+              </p>
+              <p>
+                After three years building payment and commerce systems at Coiney, I expanded into freelance leadership
+                across website development, e-commerce, mobile apps, CRM, automation, and blockchain. I own features
+                end-to-end and embed into teams on large joint projects — GUNZE Tuché, PREMINT, SEIA, Sumu Hotel, Yoitoki,
+                and more. Throughout that journey I keep learning by taking on new challenges. Currently I am honing
+                my skills in Golang.
+              </p>
+              <p>
+                I bring a strong team spirit, strictly adhere to deadlines, and guarantee project security as a baseline —
+                not an afterthought. Participating in numerous joint development projects has strengthened my
+                collaboration skills: clear communication, shared ownership, and reliable handoffs under real production pressure.
+              </p>
+            </div>
+
+            <aside class="value-board" aria-label="Working principles">
+              <article class="value-card">
+                <span class="value-icon" aria-hidden="true">🤝</span>
+                <h3>Team spirit</h3>
+                <p>I collaborate openly, respect roles, and keep momentum across design, product, and engineering partners.</p>
+              </article>
+              <article class="value-card">
+                <span class="value-icon" aria-hidden="true">⏰</span>
+                <h3>Deadline discipline</h3>
+                <p>I plan realistically, communicate risks early, and ship on the dates we commit to — every release cycle.</p>
+              </article>
+              <article class="value-card">
+                <span class="value-icon" aria-hidden="true">🔒</span>
+                <h3>Security guarantee</h3>
+                <p>Auth, data handling, and release hygiene are treated as first-class requirements on every engagement.</p>
+              </article>
+              <article class="value-card">
+                <span class="value-icon" aria-hidden="true">🧩</span>
+                <h3>Joint development</h3>
+                <p>Years of co-development sharpened my ability to integrate fast without sacrificing quality or trust.</p>
+              </article>
+            </aside>
+          </div>
+
+          <div class="stat-ribbon reveal">
+            <div class="stat">
+              <strong>🎓 Tokyo University</strong>
+              <span>Graduate foundation in rigorous problem-solving</span>
+            </div>
+            <div class="stat">
+              <strong>💳 3 years @ Coiney</strong>
+              <span>Payments &amp; commerce engineering</span>
+            </div>
+            <div class="stat">
+              <strong>🛠️ 5 years freelance</strong>
+              <span>Leader &amp; developer across web &amp; mobile</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-open" id="stack">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">🪜 Tech Stack Journey</p>
+            <h2 class="section-title">From first markup to expert systems.</h2>
+            <p class="section-lead">
+              Ordered the way full-stack developers actually grow: foundations, UI, frameworks, servers, data and cloud, platforms, then Web3.
+            </p>
+          </div>
+
+          <div class="stack-journey reveal" aria-label="Technology growth staircase from beginner to expert">
+            <div class="stack-path" aria-hidden="true">
+              <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+                <path
+                  d="M20 70 C 180 70, 220 55, 320 55 S 480 40, 560 40 S 720 25, 820 25 S 980 12, 1180 12"
+                  fill="none"
+                  stroke="url(#pathGrad)"
+                  stroke-width="3"
+                  stroke-dasharray="8 10"
+                />
+                <defs>
+                  <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#3db4ff" />
+                    <stop offset="100%" stop-color="#4ee3ff" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <ol class="stack-stairs">
+              <li class="stair stair-1">
+                <span class="stair-level">01 · Beginner</span>
+                <span class="stair-icon">🌱</span>
+                <h3>Web foundations</h3>
+                <p>How the browser, markup, style, and the DOM actually work.</p>
+                <div class="stair-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </li>
+              <li class="stair stair-2">
+                <span class="stair-level">02 · Junior</span>
+                <span class="stair-icon">🎨</span>
+                <h3>Professional UI</h3>
+                <p>Typed JavaScript and a utility system for production interfaces.</p>
+                <div class="stair-tags">
+                  <span>TypeScript</span><span>Tailwind</span>
+                </div>
+              </li>
+              <li class="stair stair-3">
+                <span class="stair-level">03 · Frontend</span>
+                <span class="stair-icon">⚛️</span>
+                <h3>App frameworks</h3>
+                <p>Component architecture, then full-stack React and a second UI stack.</p>
+                <div class="stair-tags">
+                  <span>React</span><span>Next.js</span><span>Vue</span>
+                </div>
+              </li>
+              <li class="stair stair-4">
+                <span class="stair-level">04 · Backend</span>
+                <span class="stair-icon">🖥️</span>
+                <h3>Server engineering</h3>
+                <p>A JS runtime, its HTTP framework, and a classic server language.</p>
+                <div class="stair-tags">
+                  <span>Node.js</span><span>Express</span><span>PHP</span>
+                </div>
+              </li>
+              <li class="stair stair-5">
+                <span class="stair-level">05 · Data &amp; cloud</span>
+                <span class="stair-icon">☁️</span>
+                <h3>Data then deploy</h3>
+                <p>Relational databases first, document stores next, then cloud ops.</p>
+                <div class="stair-tags">
+                  <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>AWS</span>
+                </div>
+              </li>
+              <li class="stair stair-6">
+                <span class="stair-level">06 · Platforms</span>
+                <span class="stair-icon">🛍️</span>
+                <h3>Commerce &amp; automation</h3>
+                <p>CMS, CRM, storefronts, then API workflows that run the business.</p>
+                <div class="stair-tags">
+                  <span>CMS</span><span>CRM</span><span>WooCommerce</span><span>Shopify</span>
+                  <span>Zapier</span><span>Make.com</span><span>n8n</span>
+                </div>
+              </li>
+              <li class="stair stair-7">
+                <span class="stair-level">07 · Expert</span>
+                <span class="stair-icon">🏆</span>
+                <h3>Web3 systems</h3>
+                <p>Wallets, smart contracts, and a second chain after the web stack is solid.</p>
+                <div class="stair-tags">
+                  <span>Web3</span><span>Solidity</span><span>Solana</span>
+                </div>
+              </li>
+            </ol>
+
+            <p class="stack-footnote">
+              🎯 Today I operate across this full staircase — choosing the right layer for speed, security, and product fit.
+            </p>
+            <aside class="stack-now">
+              <span class="stack-now-label">📡 Currently learning</span>
+              <strong>Golang</strong>
+              <p>I stay in motion by taking on new challenges. Go is the language I am honing right now.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-open" id="solutions">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">💡 Solutions</p>
+            <h2 class="section-title">Where I create the most leverage.</h2>
+            <p class="section-lead">
+              A wider practice than storefronts and apps: websites, CRM, automation, blockchain, and the next challenge I choose to learn.
+            </p>
+          </div>
+          <div class="solutions-rail">
+            <article class="solution reveal">
+              <p class="solution-index">01 · 🌐</p>
+              <h3>Website development</h3>
+              <p>
+                Marketing sites, product platforms, and content-heavy experiences — structured, fast, and ready for the teams who run them.
+              </p>
+              <ul>
+                <li>Information architecture</li>
+                <li>Responsive front-end systems</li>
+                <li>CMS-backed publishing</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">02 · 🛒</p>
+              <h3>E-commerce implementation</h3>
+              <p>
+                Fashion and lifestyle storefronts with merchandising, campaigns, localization, and conversion-ready UX —
+                from Singapore retail brands to Japanese lifestyle and hospitality experiences.
+              </p>
+              <ul>
+                <li>Catalog &amp; collection architecture</li>
+                <li>Promo / backorder / loyalty flows</li>
+                <li>Campaign microsites &amp; deep-links</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">03 · 📱</p>
+              <h3>Mobile app development</h3>
+              <p>
+                Consumer apps spanning travel, social, edtech, and maps — chat, realtime media, AI assistance, and
+                store-ready release pipelines.
+              </p>
+              <ul>
+                <li>Realtime chat &amp; live video</li>
+                <li>AI / speech / vision features</li>
+                <li>IAP, moderation, localization</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">04 · 🎰</p>
+              <h3>Casino &amp; engagement games</h3>
+              <p>
+                High-retention interactive products where timing, fairness signals, and polished loops matter —
+                engineered with the same production discipline as commerce systems.
+              </p>
+              <ul>
+                <li>Engagement &amp; reward loops</li>
+                <li>Realtime session reliability</li>
+                <li>Performance under concurrency</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">05 · 🗂️</p>
+              <h3>CRM development</h3>
+              <p>
+                Systems that keep customers, pipelines, and follow-ups in one place — built so teams actually use them.
+              </p>
+              <ul>
+                <li>Contact &amp; pipeline models</li>
+                <li>Role-based workflows</li>
+                <li>Integrations with the tools you already run</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">06 · 🔗</p>
+              <h3>Automation</h3>
+              <p>
+                The repetitive work between products — connected with n8n, Make.com, and Zapier so operations keep moving.
+              </p>
+              <ul>
+                <li>Workflow design</li>
+                <li>API-to-API handoffs</li>
+                <li>Alerts, sync, and back-office glue</li>
+              </ul>
+            </article>
+            <article class="solution reveal">
+              <p class="solution-index">07 · ⛓️</p>
+              <h3>Blockchain technology</h3>
+              <p>
+                Web3 products, wallets, and contracts — including allowlists, Solidity, and Solana — shipped with the same care as the web stack underneath.
+              </p>
+              <ul>
+                <li>Wallet-connected product UX</li>
+                <li>Solidity &amp; Solana</li>
+                <li>Secure on-chain flows</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">📁 Portfolio</p>
+            <h2 class="section-title">Selected work across web, product, and systems.</h2>
+            <p class="section-lead">
+              Independent builds and team co-development. Open any project for purpose, usage, my experience, stack, and
+              technologies — written to showcase real delivery depth.
+            </p>
+          </div>
+
+          <div class="filters reveal" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn is-active" data-filter="all">✨ All</button>
+            <button class="filter-btn" data-filter="web">🌐 Web</button>
+            <button class="filter-btn" data-filter="mobile">📱 Mobile</button>
+            <button class="filter-btn" data-filter="joint">🤝 Team development</button>
+            <button class="filter-btn" data-filter="independent">🚀 Independent</button>
+          </div>
+
+          <div class="project-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-open" id="contact">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div>
+              <p class="eyebrow">✉️ Contact</p>
+              <h2 class="section-title">Let’s build the next storefront, app, or product.</h2>
+              <p>
+                Available for independent delivery and team-based joint development — websites, e-commerce, mobile, CRM,
+                automation, blockchain, and the next challenge. I respond quickly on email and WhatsApp.
+              </p>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">📧 Email</span>
+                  <a href="mailto:hoshinot69@gmail.com">hoshinot69@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-label">💬 WhatsApp</span>
+                  <a href="https://wa.me/817042096576" target="_blank" rel="noopener noreferrer">+81 70-4209-6576</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:hoshinot69@gmail.com">📧 Email Takeshi</a>
+              <a class="btn btn-ghost" href="https://wa.me/817042096576" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year"></span> Takeshi Kitano</span>
+      </div>
+    </footer>
+
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+        <div class="modal-media"><img id="modal-image" alt="" /></div>
+        <div class="modal-body">
+          <p class="category" id="modal-category"></p>
+          <h3 id="modal-title"></h3>
+          <div class="detail-block">
+            <h4>🎯 Purpose</h4>
+            <p id="modal-purpose" class="detail-prose"></p>
+          </div>
+          <div class="detail-block">
+            <h4>🧭 Usage</h4>
+            <p id="modal-usage" class="detail-prose"></p>
+          </div>
+          <div class="detail-block">
+            <h4>🛠️ My experience on this project</h4>
+            <p id="modal-experience" class="detail-prose"></p>
+          </div>
+          <div class="detail-block">
+            <h4>⚙️ Stack</h4>
+            <div class="chip-row" id="modal-stack"></div>
+          </div>
+          <div class="detail-block">
+            <h4>✨ Technologies &amp; capabilities</h4>
+            <div class="chip-row" id="modal-tech"></div>
+          </div>
+          <div class="project-actions" style="margin-top: 1.25rem">
+            <a class="btn btn-primary" id="modal-link" target="_blank" rel="noopener noreferrer">🔗 Open live project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="to-top" id="to-top" type="button" aria-label="Scroll to top">↑</button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
