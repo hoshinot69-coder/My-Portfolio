@@ -1040,61 +1040,6 @@ em {
   color: var(--blue-100);
 }
 
-/* Contact */
-.contact-panel {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 2rem;
-  align-items: end;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
-}
-
-.contact-panel > div > p {
-  color: var(--muted);
-  margin-top: 0.85rem;
-  max-width: 42ch;
-  font-size: var(--fs-body);
-}
-
-.contact-list {
-  list-style: none;
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 0.85rem;
-}
-
-.contact-list li {
-  display: grid;
-  gap: 0.2rem;
-}
-
-.contact-label {
-  font-size: 0.95rem;
-  color: var(--blue-300);
-  font-family: var(--font-headline);
-}
-
-.contact-list a {
-  font-size: 1.25rem;
-  font-weight: 650;
-  color: var(--text);
-  border-bottom: 1px solid transparent;
-  width: fit-content;
-}
-
-.contact-list a:hover {
-  color: var(--cyan);
-  border-bottom-color: rgba(78, 227, 255, 0.45);
-}
-
-.contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-  justify-content: flex-end;
-}
-
 /* Footer */
 .stack-now {
   margin-top: 1.75rem;
@@ -1232,7 +1177,6 @@ em {
   .hero-grid,
   .intro-layout,
   .solutions-rail,
-  .contact-panel,
   .stat-ribbon {
     grid-template-columns: 1fr;
   }
@@ -1255,10 +1199,6 @@ em {
   .wheel-wrap {
     width: min(72vw, 400px);
     margin-inline: auto;
-  }
-
-  .contact-actions {
-    justify-content: flex-start;
   }
 
   .project-grid {
